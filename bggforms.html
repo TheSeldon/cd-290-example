@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <title>BGG Forms</title>
+</head>
+
+<body>
+   <form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="post">
+      <fieldset>
+         <legend>Your BGG Info:</legend>
+            <label>E-Mail:
+               <input type="email" name="username" size="30" maxlength="100">
+            </label>
+
+            <br />
+
+            <label>Password:
+               <input type="password" name="password" size = "20" maxlength="20">
+            </label>
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+         <legend>Your Games</legend>
+            <p>
+               <label for="collection-size">How many games do you own?</label>
+               <select name="number-of-games-owned" id="collection-size">
+                  <option value="ltfive">        less than 5  </option>
+                  <option value="six-twenty">    6-20         </option>
+                  <option value="twenty-hundred">20-100       </option>
+                  <option value="gthundred">     more than 100</option>
+               </select>
+            </p>
+
+            <p>
+               <label for="fav-types-games">Preferred Game Type(s):</label> <br />
+               <input type="checkbox" name="favs" value="Euro" />Euro <br />
+               <input type="checkbox" name="favs" value="Ameritrash" />Ameritrash <br />
+               <input type="checkbox" name="favs" value="Party" />Party <br />
+               <input type="checkbox" name="favs" value="Wargame" />Wargame <br />
+               <input type="checkbox" name="favs" value="Other" />Other
+            </p>
+
+            <p>Favorite Number of Players
+            <br />
+            <label>
+               <input type="radio" name="fav-player-count" value="1" />1</label><br />
+            <label>
+               <input type="radio" name="fav-player-count" value="2" />2</label><br />
+            <label>
+               <input type="radio" name="fav-player-count" value="3" />3</label><br />
+            <label>
+               <input type="radio" name="fav-player-count" value="4" />4</label><br />
+            <label>
+               <input type="radio" name="fav-player-count" value="gt5" />5+</label>
+            </p>
+
+            <input type="submit" value="Submit Your BGG Info" />
+      </fieldset>
+   </form>
+</body>
+
+</html>
